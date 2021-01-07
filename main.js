@@ -54,7 +54,10 @@ const randomNum = (beginNum, endNum, decimal = true) => {
     return "Enter two numbers";
 }
 
-const randomColor = () => {
+const randomColor = (hash = true) => {
     let colors = Math.floor(Math.random() * 16777215).toString(16).toUpperCase();
-    return `#${colors}`;
+    if(hash) return `#${colors}`;
+    return `${colors}`;
 }
+
+println(randomColor(false))
