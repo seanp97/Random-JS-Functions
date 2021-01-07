@@ -19,7 +19,7 @@ const createCanvas = (canvasWidth, canvasHeight, canvasBackgroundColor = "#000")
 //createCanvas(1000, 750, "#f00");
 
 const empty = (input) => {
-    if (input == '' || input == undefined || input == null) return true;
+    if(input == '' || input == undefined || input == null) return true;
     return false;
 }
 
@@ -59,5 +59,3 @@ const randomColor = (hash = true) => {
     if(hash) return `#${colors}`;
     return `${colors}`;
 }
-
-println(randomColor(false))
