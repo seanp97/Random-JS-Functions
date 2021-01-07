@@ -55,6 +55,6 @@ const randomNum = (beginNum, endNum, decimal = true) => {
 }
 
 const randomColor = () => {
-    let colors = Math.floor(Math.random()*16777215).toString(16).toUpperCase();
+    let colors = Math.floor(Math.random() *16777215).toString(16).toUpperCase();
     return `#${colors}`;
 }
